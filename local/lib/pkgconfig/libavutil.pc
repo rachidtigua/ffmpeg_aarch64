@@ -1,0 +1,14 @@
+prefix=/home/rachid/usr/local
+exec_prefix=${prefix}
+libdir=/home/rachid/usr/local/lib
+includedir=/home/rachid/usr/local/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.60.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lrt -lm
+Libs.private: 
+Cflags: -I${includedir}

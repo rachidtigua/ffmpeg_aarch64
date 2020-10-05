@@ -1,0 +1,14 @@
+prefix=/home/rachid/usr/local
+exec_prefix=${prefix}
+libdir=/home/rachid/usr/local/lib
+includedir=/home/rachid/usr/local/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.60.100
+Requires: libavcodec >= 58.108.100, libswresample >= 3.8.100, libavutil >= 56.60.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm
+Libs.private: 
+Cflags: -I${includedir}
